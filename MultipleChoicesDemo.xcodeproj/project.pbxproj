@@ -18,6 +18,7 @@
 		6ADA98DE20C634D5004FC0C9 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA98DC20C634D5004FC0C9 /* TableViewCell.m */; };
 		6ADA98DF20C634D5004FC0C9 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ADA98DD20C634D5004FC0C9 /* TableViewCell.xib */; };
 		6ADA98E220C63682004FC0C9 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADA98E120C63682004FC0C9 /* Model.m */; };
+		6AF0059520C92879004FB06F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AF0059420C92879004FB06F /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		6ADA98DD20C634D5004FC0C9 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		6ADA98E020C63682004FC0C9 /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		6ADA98E120C63682004FC0C9 /* Model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		6AF0059420C92879004FB06F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AF0059520C92879004FB06F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +89,7 @@
 				6ADA98B620C63467004FC0C9 /* MultipleChoicesDemo */,
 				6ADA98CF20C63469004FC0C9 /* MultipleChoicesDemoUITests */,
 				6ADA98B520C63467004FC0C9 /* Products */,
+				6AF0059320C92879004FB06F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +131,14 @@
 				6ADA98D220C63469004FC0C9 /* Info.plist */,
 			);
 			path = MultipleChoicesDemoUITests;
+			sourceTree = "<group>";
+		};
+		6AF0059320C92879004FB06F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AF0059420C92879004FB06F /* UIKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

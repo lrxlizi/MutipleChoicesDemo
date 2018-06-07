@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "GrenealClass"
-  s.version      = "1.0.0"
-  s.summary      = "这是一个简单的demo"
+  s.version      = "1.0.1"
+  s.summary      = "添加一些功能"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -114,7 +114,7 @@ Pod::Spec.new do |s|
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-
+    s.framework = 'UIKit/UIKit.h'
  
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
@@ -129,5 +129,6 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  
+ 
+
 end
