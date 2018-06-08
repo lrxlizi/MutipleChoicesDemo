@@ -67,17 +67,13 @@ Pod::Spec.new do |s|
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
-  # s.osx.deployment_target = "10.7"
-  # s.watchos.deployment_target = "2.0"
-  # s.tvos.deployment_target = "9.0"
-
+ 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
-  #
-
+  
   s.source       = { :git => 'https://github.com/lrxlizi/MutipleChoicesDemo.git', :tag => s.version }
 
 
@@ -92,7 +88,7 @@ Pod::Spec.new do |s|
   s.source_files  = 'MultipleChoicesDemo/Greneal/*.{h,m}'
   s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  # s.public_header_files = "MultipleChoicesDemo/Greneal/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -108,14 +104,13 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-    	s.ios.framework = 'UIKit/UIKit'
-       s.osx.framework = 'UIKit/UIKit'
+   
+
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
 
@@ -129,6 +124,12 @@ Pod::Spec.new do |s|
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
- 
+
+
+   s.frameworks = 'UIKit/UIKit.h'
+ s.ios.frameworks = 'Foundation', 'UIKit'
+  
 
 end
+
+
