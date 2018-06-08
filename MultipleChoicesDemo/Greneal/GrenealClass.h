@@ -8,12 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_OS_IPHONE || TARGET_OS_TV
 #import <UIKit/UIKit.h>
 
-#elif TARGET_OS_MAC
-#import <AppKit/AppKit.h>
-#endif
 
 
 @interface GrenealClass : NSObject

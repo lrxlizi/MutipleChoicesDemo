@@ -125,9 +125,14 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
 
+s.frameworks = 'UIKit/UIKit'
+   s.ios.frameworks = 'Foundation', 'UIKit'
+  s.tvos.frameworks = 'Foundation', 'UIKit'
+  s.osx.frameworks = 'Foundation', 'AppKit'
 
-   s.frameworks = 'UIKit/UIKit.h'
- s.ios.frameworks = 'Foundation', 'UIKit'
+  s.ios.deployment_target = '6.0' # minimum SDK with autolayout
+  s.osx.deployment_target = '10.7' # minimum SDK with autolayout
+  s.tvos.deployment_target = '9.0' # minimum SDK with autolayout
   
 
 end
